@@ -1,0 +1,73 @@
+<!-- <div *ngFor="let image of images">
+  <img [src]="image.src" alt="">
+</div> -->
+
+<!-- <div *ngFor="let image of images" class="card" style="width: 20rem;">
+  <img class="card-img-top" [src]="image.src"  alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Actualizada hace 5 minutos</p>
+  </div>
+</div> -->
+
+<!-- <div class="card bg-dark mb-3">
+  <div *ngFor="let image of images" class="card" style="width: 20rem;">
+    <div class="card-deck">
+      <div class="card">
+          <div class="card bg-dark mb-3">
+        <img [src]="image.src" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">BTS</h5>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div> -->
+<!-- <div *ngFor="let image of images" class="card" style="width: 20rem;"> -->
+<!-- <div class="row cards" style="width: auto; margin: auto auto;"> -->
+
+<div class="card-group">
+<div class="container">
+  <div class="row">
+    <div class="row cards" style="width: auto; margin: auto auto;">
+      <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div *ngFor="let image of images" class="card" style="width: 20rem;">
+          <div class="row cards col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:319px;">
+            <img [src]="getImage()" class="card-img-top" alt="" />
+            <div class="card-block">
+              <h5 class="card-title">{{name}}</h5>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
